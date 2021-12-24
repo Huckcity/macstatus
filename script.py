@@ -10,31 +10,41 @@ sense.low_light = True
 sense.clear()
 
 
+def print_green():
+    sense.set_pixel(3, 2, (0, 255, 0))
+    sense.set_pixel(4, 2, (0, 255, 0))
+    sense.set_pixel(5, 3, (0, 255, 0))
+    sense.set_pixel(5, 4, (0, 255, 0))
+    sense.set_pixel(4, 5, (0, 255, 0))
+    sense.set_pixel(3, 5, (0, 255, 0))
+    sense.set_pixel(2, 4, (0, 255, 0))
+    sense.set_pixel(2, 3, (0, 255, 0))
+
+
+def print_red():
+    sense.set_pixel(3, 2, (255, 0, 0))
+    sense.set_pixel(4, 2, (255, 0, 0))
+    sense.set_pixel(5, 3, (255, 0, 0))
+    sense.set_pixel(5, 4, (255, 0, 0))
+    sense.set_pixel(4, 5, (255, 0, 0))
+    sense.set_pixel(3, 5, (255, 0, 0))
+    sense.set_pixel(2, 4, (255, 0, 0))
+    sense.set_pixel(2, 3, (255, 0, 0))
+
+
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
         print("connected OK Returned code=", rc)
+        print_green()
 
-        sense.clear(255, 255, 255)
-        sense.set_pixel(2, 6, (0, 0, 255))
-        sense.set_pixel(4, 6, (0, 0, 255))
-        sense.set_pixel(3, 4, (100, 0, 0))
-        sense.set_pixel(1, 2, (255, 0, 0))
-        sense.set_pixel(2, 1, (255, 0, 0))
-        sense.set_pixel(3, 1, (255, 0, 0))
-        sense.set_pixel(4, 1, (255, 0, 0))
-        sense.set_pixel(5, 2, (255, 0, 0))
     else:
         print("Bad connection Returned code=", rc)
+        print_red()
 
-        sense.clear(255, 255, 255)
-        sense.set_pixel(2, 6, (0, 0, 255))
-        sense.set_pixel(4, 6, (0, 0, 255))
-        sense.set_pixel(3, 4, (100, 0, 0))
-        sense.set_pixel(1, 1, (255, 0, 0))
-        sense.set_pixel(2, 2, (255, 0, 0))
-        sense.set_pixel(3, 2, (255, 0, 0))
-        sense.set_pixel(4, 2, (255, 0, 0))
-        sense.set_pixel(5, 1, (255, 0, 0))
+
+def on_disconnect(client, userdate, rc):
+    print("Disconnected. Return Code: ", rc)
+    print_red()
 
 
 def on_publish(client, obj, mid):
@@ -46,6 +56,7 @@ def on_publish(client, obj, mid):
 
         time.sleep(0.2)
     sense.clear()
+    print_green()
 
 
 client_id = f'python-mqtt-{random.randint(0, 1000)}'
@@ -54,6 +65,8 @@ mqttc = mqtt.Client(client_id, clean_session=True,
 
 mqttc.on_connect = on_connect
 mqttc.on_publish = on_publish
+mqttc.on_disconnect = on_disconnect
+
 mqttc.tls_set()
 mqttc.connect('mqtt.huckcity.ie', 9001)
 mqttc.loop_start()
@@ -139,4 +152,4 @@ while True:
                 mac_address_store[key] = datetime.now()
 
     print('Sleeping...')
-    time.sleep(10)
+    time.sleep(60)

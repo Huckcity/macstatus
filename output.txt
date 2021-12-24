@@ -1361,3 +1361,40 @@ E2:56:E1:05:51:61 joined the network at 12/24/2021, 01:10:06
 E2:56:E1:05:51:61 went offline at 12/24/2021, 01:10:20
 2A:48:A6:DB:CC:19 went offline at 12/24/2021, 01:10:41
 9C:76:13:13:44:BC joined the network at 12/24/2021, 01:10:41
+2A:48:A6:DB:CC:19 went offline at 12/24/2021, 01:23:25
+86:36:D6:5C:AD:6C joined the network at 12/24/2021, 01:23:25
+E2:56:E1:05:51:61 joined the network at 12/24/2021, 01:23:25
+E2:56:E1:05:51:61 went offline at 12/24/2021, 01:23:46
+2A:48:A6:DB:CC:19 joined the network at 12/24/2021, 01:23:46
+2A:9F:71:4E:C0:FD joined the network at 12/24/2021, 01:23:46
+9C:76:13:13:44:BC went offline at 12/24/2021, 01:24:23
+E2:56:E1:05:51:61 joined the network at 12/24/2021, 01:24:23
+2A:48:A6:DB:CC:19 went offline at 12/24/2021, 01:24:42
+2A:9F:71:4E:C0:FD went offline at 12/24/2021, 01:24:42
+9C:76:13:13:44:BC joined the network at 12/24/2021, 01:24:42
+2A:9F:71:4E:C0:FD joined the network at 12/24/2021, 01:25:02
+2A:9F:71:4E:C0:FD went offline at 12/24/2021, 01:25:19
+2A:48:A6:DB:CC:19 joined the network at 12/24/2021, 01:25:19
+2A:9F:71:4E:C0:FD went offline at 12/24/2021, 01:27:49
+2A:48:A6:DB:CC:19 joined the network at 12/24/2021, 01:27:49
+2A:9F:71:4E:C0:FD joined the network at 12/24/2021, 01:28:11
+E2:56:E1:05:51:61 joined the network at 12/24/2021, 01:28:11
+9C:76:13:13:44:BC went offline at 12/24/2021, 01:28:44
+2A:9F:71:4E:C0:FD went offline at 12/24/2021, 01:28:44
+10:5A:17:BB:39:A9 went offline at 12/24/2021, 01:29:01
+2A:48:A6:DB:CC:19 went offline at 12/24/2021, 01:29:01
+2A:9F:71:4E:C0:FD joined the network at 12/24/2021, 01:29:01
+9C:76:13:13:44:BC joined the network at 12/24/2021, 01:29:01
+9C:76:13:13:44:BC went offline at 12/24/2021, 01:29:20
+2A:48:A6:DB:CC:19 joined the network at 12/24/2021, 01:29:20
+2A:9F:71:4E:C0:FD went offline at 12/24/2021, 01:29:42
+9C:76:13:13:44:BC joined the network at 12/24/2021, 01:29:42
+9C:76:13:13:44:BC went offline at 12/24/2021, 01:30:06
+E2:56:E1:05:51:61 went offline at 12/24/2021, 01:30:27
+9C:76:13:13:44:BC joined the network at 12/24/2021, 01:30:27
+2A:9F:71:4E:C0:FD joined the network at 12/24/2021, 01:30:47
+E2:56:E1:05:51:61 joined the network at 12/24/2021, 01:30:47
+9C:76:13:13:44:BC went offline at 12/24/2021, 01:31:04
+2A:9F:71:4E:C0:FD went offline at 12/24/2021, 01:31:04
+E2:56:E1:05:51:61 went offline at 12/24/2021, 01:31:04
+9C:76:13:13:44:BC joined the network at 12/24/2021, 01:31:23
